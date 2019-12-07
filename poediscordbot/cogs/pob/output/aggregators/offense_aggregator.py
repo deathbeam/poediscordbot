@@ -40,6 +40,7 @@ class OffenseAggregator(AbstractAggregator):
             if selected_skill and selected_skill.get_name():
                 gem_name = selected_skill.get_name()
                 show_avg = show_avg or "firestorm" in gem_name.lower() \
+                           or "divine ire" in gem_name.lower() \
                            or "ice storm" in gem_name.lower() \
                            or "molten burst" in gem_name.lower()
 
